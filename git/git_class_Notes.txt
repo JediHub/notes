@@ -1,0 +1,1050 @@
+#########################
+Day - 2 / 31st Mar. 2024 
+#########################
+
+			Environments :::
+		
+		Non-Prod Environments											Production Environments
+		
+			Dev Environment
+			Build Environment
+			Test Environment
+				- QA 	- Quality Assurance Testing 
+				- UAT 	- User Acceptance Testing 		(pre-prod/staging)	---->			Prod Environment
+
+
+		Telecomm - Domain :
+		
+		SP1 - Introduce a new offer to customers - online.
+					outlets 
+			
+
+
+	Version Control System using GIT :
+	
+		GIT/GITHUB ( Source Code Repository)
+	
+	Developers' perspective :::
+	
+	Java_web_application :
+	Eclipse IDEs 
+	
+	Java_web_application # Project Folder 
+		src/index.jsp 
+		
+	<html>
+	---
+	---
+	---
+	--
+	--
+	-
+	-
+	</html>
+	
+	save as index.jsp 
+	
+	test index.jsp 
+
+	<html>
+	---
+	---
+	---
+	-----
+	------
+	----
+	-
+	---
+	-
+	---
+	</html>	
+	
+	save as index.jsp 
+
+	<html>
+	---
+	---
+	---
+	-----
+	------
+	</html>	
+	
+	save as index.jsp 
+	
+	test --> 
+	
+	
+	Version Control the Source Code Changes using Version Control System:
+	
+	Java_web_application # Project Folder 
+		src/index.jsp 
+		
+	<html>
+	---
+	---
+	---
+	--
+	--
+	-
+	-
+	</html>
+	
+	save as index.jsp_v1.0 		- (tag/version_number/commit_id)
+	
+	<html>
+	---
+	---
+	---
+	--
+	--
+	----
+	----
+	----
+	---
+	--
+	-
+	</html>
+
+	save as index.jsp_v1.1 		- (tag/version_number/commit_id)
+	save as index.jsp_v1.2 		- (tag/version_number/commit_id)
+	save as index.jsp_v1.3 		- (tag/version_number/commit_id)
+	save as index.jsp_v1.4 		- (tag/version_number/commit_id)
+	save as index.jsp_v1.5 		- (tag/version_number/commit_id)
+	save as index.jsp_v1.6 		- (tag/version_number/commit_id)   -> Latest version.
+	
+	VCS :
+		- Is used to Version Control the Changes 
+		- Is used to track the changes
+	
+	Types of Version Control System:
+	
+		- Local VCS 
+		- Centralized VCS 
+		- Distributed VCS 
+		
+	
+	GIT ::
+	
+		- Is the Open-Source Distributed VCS 
+		- It is used to track the source code changes 
+		- It is used to version control the source code changes 
+		- It is used to perform parallel developement using branching techniques.
+		
+		
+	Distributed VCS :
+	
+		Remote Server (Cloud/On-prem)
+			Remote Repository Management :
+				- github 			
+				- Az Repository 
+				- AWS Code Commit 
+				- gitlab 
+				- bitbucket				
+		
+		Local Machine (Developers' Machine)
+		
+			git client installed in the Local Machine to manage the local repositories.
+			
+	git / github 
+			
+	Git file workflow :::	
+	
+	Local Machine 																	Remote Server 
+	
+	Working Directory 	-------> Staging Area		-------> Local Repository 				Remote Repository
+	
+	index.jsp	--------->		index.jsp		---------->		index.jsp_v1.0	  ------->		index.jsp_v1.0
+				 git add						git commit 						  git push
+			
+			
+	Developers' Workload :::
+	
+		Types of Project :
+		
+		- Enhancement / Bugfixing 
+		
+		- New Product 
+		
+	Git Commands :::
+
+		- git clone 		#	Used to copy/clone the entire repository to Local Machine 
+		
+		- git add 			#	Used to add the changes from working directory to staging area 
+
+		- git commit 		#	Used to permanently commit the changes from staging area to local repository
+	
+		- git push 			# 	Used to push the changes from local repository to remote repository
+		
+		- git fetch/git pull ::
+		
+			- Both git fetch/pull are used to handle the incremental changes 
+			
+			- git fetch :
+				- Is used to just to check for the incremental changes in the remote repository. If the incremental changes exist, it will update the details only in Local Repository. NOT in working Directory.				
+				
+			- git pull :	
+				- Is used to check for the incremental changes in the remote repository. If the incremental changes exist, it will update the incremental changes in Local Repository as well in working Directory.
+				
+				git pull = git fetch + git merge 
+				
+				
+		- git init 			# 	Used to Initialize a local repository
+								It create .git directory and default branch 'master/main'
+				
+	
+	Install GIT Client in the Local Machine ( Windows - GIT BASH,CMD, GUI )
+			https://git-scm.com/downloads
+
+	
+		Open a Terminal :
+		
+			git --version 
+
+	Working with GIT Cli Command ::::
+	
+		cd d:
+		mkdir Edu_DCP_Mar30
+		cd Edu_DCP_Mar30
+		mkdir repo1
+		mkdir repo2
+		mkdir repo3 	
+	
+	git init 
+	
+	
+	git status	# used to get the current status of the repository
+
+	git log 	# used to get the list of commit
+
+	Local Machine 																	Remote Server 
+	
+	Working Directory 	-------> Staging Area		-------> Local Repository 				Remote Repository
+		file1.txt		git add    file1.txt
+
+
+	git config :
+	
+		- Global Configuration 	# Is applicable for all the repositories
+		
+			git config --global user.name "Loksai"
+			git config --global user.email "loksai@asdf.com"
+		
+		- Local Configuration	# Is applicable for a specific repository
+		
+			git config user.name "Loksai"
+			git config user.email "loksai@asdf.com"
+	
+	Install git 
+	
+	open git bash
+	
+	git --version 
+	
+		cd d:
+		mkdir Edu_DCP_Mar30
+		cd Edu_DCP_Mar30
+		mkdir repo1
+		cd repo1 
+		
+	git init 	
+		
+	git config --global user.name "Loksai"
+	git config --global user.email "loksai@asdf.com"	
+	
+	echo "rec1" >> f1.txt 
+	
+	git add f1.txt 
+	
+	git commit -m "Created f1.txt"
+	
+	git log 
+	
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	git init 
+	
+	GIT ADD :
+	
+		git add <file_name>
+		
+		git add a1.txt a2.txt
+		
+		git add *.java
+		
+		git add .
+		
+	git commit :
+	
+		git commit -m "Commit_Message"
+		
+	git status 
+
+	GIT LOG ::
+	
+		git log 		# used to get the list of commits 
+		
+		git log --oneline	# Used to get the list of commits with short commit_id and msg.
+		
+		git log -2 
+		
+		git log --oneline -2 
+		
+		git show <commit_id>
+		
+		git show -2 
+		
+		git log --stat -1
+		
+	Unstage :::
+	
+		git rm --cached file1.txt		# Just unstage the file, changes will be back to working directory
+
+    501  cd d:
+  502  pwd
+  503  mkdir Edu_DCP_Mar30
+  504  cd Edu_DCP_Mar30/
+  505  pwd
+  506  clear
+  507  mkdir projectrepo1
+  508  ls
+  509  cd projectrepo1/
+  510  clear
+  511  pwd
+  512  cd ..
+  513  cd projectrepo2/
+  514  mkdir projectrepo2
+  515  clear
+  516  ls
+  517  cd projectrepo1
+  518  clear
+  519  ls
+  520  ls -a
+  521  git init
+  522  ls
+  523  ls -a
+  524  cd .git/
+  525  ls
+  526  clear
+  527  cd ..
+  528  lw
+  529  ls a-
+  530  clear
+  531  ls -a
+  532  ls
+  533  echo "hello"
+  534  echo "record1" >> file1.txt
+  535  ls
+  536  cat file1.txt
+  537  clear
+  538  git status
+  539  git add file1.txt
+  540  git status
+  541  git commit -m "Created file1.txt"
+  542  git status
+  543  git log
+  544  clear
+  545  cd ..
+  546  mkdir projectrepo3
+  547  cd projectrepo3
+  548  git init
+  549  git status
+  550  ls
+  551  echo "rec1" >> file1.txt
+  552  git status
+  553  git add file1.txt
+  554  git status
+  555  git commit -m "Created file1.txt"
+  556  git log
+  557  echo "rec1" >> file2.txt
+  558  git status
+  559  git add file2.txt
+  560  git status
+  561  git commit -m "Created file2.txt"
+  562  git status
+  563  git log
+  564  clear
+  565  git log
+  566  git config user.name "Loksai"
+  567  echo "rec1" >> f3.txt
+  568  git add f3.txt
+  569  git commit -m "Created f3.txt"
+  570  git log
+  571  cd ..
+  572  cd projectrepo1/
+  573  echo "rec1" >> s1.txt
+  574  git add .
+  575  git commit -m "s1.txt"
+  576  clera
+  577  clear
+  578  git log
+  579  clear
+  580  git log
+  581  git config --global user.name "Loksai-CU"
+  582  git config --global user.email "LoksaiCU@asdf.com"
+  583  echo "rec1" >> d1.txt
+  584  git add d1.txt
+  585  git commit -m "Created d1.txt"
+  586  git log
+  587  cd ..
+  588  ls
+  589  cd projectrepo2
+  590  cd ..
+  591  cd projectrepo3/
+  592  clear
+  593  git log
+  594  echo "rec1" >> q1.txt
+  595  git add q1.txt
+  596  git commit -m "Created q1.txt"
+  597  git log
+  598  cd ..
+  599  clear
+  600  cd projectrepo2
+  601  git init
+  602  echo "rec1" >> l1.txt
+  603  git add l1.txt
+  604  git commit -m "Created l1.txt"
+  605  git log
+  606  clear
+  607  git log
+  608  ls
+  609  clear
+  610  git status
+  611  clear
+  612  ls
+  613  echo "rec1" >> a1.txt
+  614  echo "rec1" >> a2.txt
+  615  echo "rec1" >> a3.txt
+  616  echo "rec1" >> s1.java
+  617  echo "rec1" >> s2.java
+  618  echo "rec1" >> q1.html
+  619  echo "rec1" >> w1.doc
+  620  echo "rec1" >> w2.md
+  621  echo "rec1" >> e1.jsp
+  622  echo "rec1" >> e2.jsp
+  623  clear
+  624  ls
+  625  git status
+  626  git add a1.txt a2.txt
+  627  git status
+  628  git add *.java
+  629  git status
+  630  git add .
+  631  git status
+  632  git commit -m "Created some files"
+  633  git status
+  634  clear
+  635  ls
+  636  git status
+  637  clear
+  638  git log
+  639  echo "rec1" >> k1.txt
+  640  git add .
+  641  git commit -m "Created k1.txt"
+  642  echo "rec1" >> k2.txt
+  643  git add .
+  644  git commit -m "Created k2.txt"
+  645  echo "rec1" >> k3.txt
+  646  git add .
+  647  git commit -m "Created k3.txt"
+  648  echo "rec1" >> k4.txt
+  649  git add .
+  650  git commit -m "Created k4.txt"
+  651  echo "rec1" >> k5.txt
+  652  git add .
+  653  git commit -m "Created k5.txt"
+  654  clear
+  655  git log
+  656  clear
+  657  git log
+  658  clear
+  659  git log
+  660  clear
+  661  git log --oneline
+  662  git log --oneline -3
+  663  git log --oneline -2
+  664  git log --oneline -1
+  665  clear
+  666  git log -1
+  667  clear
+  668  git log --oneline
+  669  git show c819810
+  670  git show -2
+  671  git log -2
+  672  clear
+  673  git log --oneline -4
+  674  git show cd9a655
+  675  git log -stat -1
+  676  git log --stat -1
+  677  clear
+  678  ls
+  679  git log --oneline
+  680  git status
+  681  clear
+  682  echo "rec1" >> file1.txt
+  683  git add .
+  684  echo "rec1" >> file2.txt
+  685  git add .
+  686  echo "rec1" >> file3.txt
+  687  git add .
+  688  clear
+  689  git status
+  690  git rm --cached file1.txt
+  691  git status
+  692  git add .
+  693  git commit -m "Created some files"
+  694  clear
+  695  ls
+  696  clear
+  697  clear
+  698  ls
+  699  cat a1.txt
+  700  pwd
+  701  cd ..
+  702  history
+
+  
+Next :::
+	
+	GIT Misc. Commands 
+	
+	Handling Local Repository
+	
+	Branching Techniques
+	
+	Handling Remote Repository(GITHUB)
+				
+#########################
+Day - 3 / 6th Apr. 2024 
+#########################	
+	
+	GIT Misc. Commands 
+	
+		- git ignore 
+		- git reset / revert 
+		- Branching Techniques
+
+	Java_web_application # Project Folder 
+		src
+			main
+				index.jsp 
+				signin.java 
+				email_validation.java
+			test 
+				signin_tc.java
+				email_validation_ca.java
+		target/
+			*.war
+			*.jar
+		application.properties
+		db_credentials
+		secrets
+
+
+	Local Machine 																	Remote Server 
+	
+	Working Directory 	-------> Staging Area		-------> Local Repository 		===>		Remote Repository
+		file1.txt		git add    file1.txt
+		
+		- GIT-IGNORE is used to ignore the files from tracking.
+		
+		- Create .gitignore file and add and make it as a first commit in the repo.
+		
+		vi .gitignore 
+			*.war
+			application.properties
+			sample1.doc 
+			file1.md 
+			target/
+		
+		git add .
+		
+		git commit -m "Initial Commit"
+		
+		git ls-files		==> used to get the list of files that are being tracked by git.
+		
+		ls 					==> used to get the list from working directory.
+		
+	
+		GIT RESET :
+		
+			- git reset is used to undo the committed changes
+			- git reset will reset the HEAD Pointer to the previous commit point 
+			- git reset will not create any new commit point to track the reset actions.
+			- git reset is NOT Recommended in the shared repository. 
+			
+		git reset <reset option> <previous_commit_id>
+		
+		git reset --soft :
+			- It is used undo the changes
+			- It transfer the HEAD point back to previous commit point
+			- git reset --soft will remove the changes from the repository and the changes will be back to staging area.
+			- i.e., the changes will remain in staging area and working directory.
+			
+		
+		git reset --mixed :						# Default
+			- It is used undo the changes
+			- It transfer the HEAD point back to previous commit point
+			- git reset --mixed will remove the changes from the repository and the staging area. Changes will be back to working directory.
+			- i.e., the changes will remain only in working directory.		
+
+		git reset --hard :
+			- It is used undo the changes
+			- It transfer the HEAD point back to previous commit point
+			- git reset --hard will permanently remove the changes from the repository, staging area and working directory.
+			- i.e., It is permanent data loss.			
+
+		repo:
+		
+			initial commit - .gitignore
+			cm1 - *.java 
+			cm2 - *.html
+			cm3 - *.jsp 
+			cm4 - *.css 
+			
+		git reset --hard cm2
+		
+		
+		
+		GIT REVERT :
+		
+			- git revert is used to undo a specific commit.
+			
+			- git revert is same as git reset --hard ==> Permanent deletion of a specific commit 
+		
+			- git revert will create a new commit point to track the revert actions,
+				using commit message!
+			
+			- the commit will be maintained without any impact. 
+			
+		syntax:
+
+			git revert <commit_id>
+			
+	
+		
+	Branching Techniques :::
+	
+		Distributed VCS - GIT 
+		
+			--> Parallel Development
+			
+			Branches are the logical copy of repo(default branch)
+
+	
+	Git Branch Strategies:::
+	
+	
+	Java_web_application_Project 
+	
+		rel0424 --> 
+		
+
+Scenario 1:
+	
+		Repo1:
+
+			master -> cm1,cm2,cm3 	(signin.java)		# Master --> 	Production version of src_code 
+																		Maintain the integrity of Master Branch
+																		
+				feature1_branch -> cm1,cm2,cm3 (signin.java)														
+									cm1,cm2,cm3,f1cm1,f1cm2,f1cm3	- Test, review and merge to master branch		
+													
+Scenario 2:				
+		Repo1:	
+	
+			master -> 	cm1,cm2,cm3	(signin.java)						
+			
+				Developer1_Branch -> cm1,cm2,cm3
+									 cm1,cm2,cm3,f1cm1,f1cm2,f1cm3,f2cm1,f2cm2,f2cm3
+					
+			
+					feature1_branch -> 	cm1,cm2,cm3
+										cm1,cm2,cm3,f1cm1,f1cm2,f1cm3
+					
+					feature2_branch ->  cm1,cm2,cm3			
+										cm1,cm2,cm3,f2cm1,f2cm2,f2cm3
+
+Scenario 3:				
+		Repo1:	
+	
+			master -> 	cm1,cm2,cm3	(signin.java)	
+
+				Integration_Branch -> 	cm1,cm2,cm3	
+										cm1,cm2,cm3,Developer1_Branch_Changes,Developer2_Branch_Changes 
+			
+			
+					Developer1_Branch -> cm1,cm2,cm3
+										 cm1,cm2,cm3,f1cm1,f1cm2,f1cm3,f2cm1,f2cm2,f2cm3						
+				
+						feature1_branch -> 	cm1,cm2,cm3
+											cm1,cm2,cm3,f1cm1,f1cm2,f1cm3
+						
+						feature2_branch ->  cm1,cm2,cm3			
+											cm1,cm2,cm3,f2cm1,f2cm2,f2cm3				
+				
+					Developer2_Branch -> cm1,cm2,cm3
+										 cm1,cm2,cm3,f1cm1,f1cm2,f1cm3,f2cm1,f2cm2,f2cm3						
+				
+						feature1_branch -> 	cm1,cm2,cm3
+											cm1,cm2,cm3,f1cm1,f1cm2,f1cm3
+						
+						feature2_branch ->  cm1,cm2,cm3			
+											cm1,cm2,cm3,f2cm1,f2cm2,f2cm3				
+				
+Scenario 4:				
+		Repo1:	
+	
+			master -> 	cm1,cm2,cm3	(signin.java)	
+			
+						cm1,cm2,cm3,cm4						# cm4 is the integration of Team1 and Team2 Changes
+			
+				Release_Branch -> 	cm1,cm2,cm3
+									cm1,cm2,cm3,Team1_Changes,Team2_Changes
+
+					Integration_Branch1 -> 	cm1,cm2,cm3																# Team1
+											cm1,cm2,cm3,Developer1_Branch_Changes,Developer2_Branch_Changes 			
+				
+						Developer1_Branch -> cm1,cm2,cm3
+											 cm1,cm2,cm3,f1cm1,f1cm2,f1cm3,f2cm1,f2cm2,f2cm3						
+					
+							feature1_branch -> 	cm1,cm2,cm3
+												cm1,cm2,cm3,f1cm1,f1cm2,f1cm3
+							
+							feature2_branch ->  cm1,cm2,cm3			
+												cm1,cm2,cm3,f2cm1,f2cm2,f2cm3				
+					
+						Developer2_Branch -> cm1,cm2,cm3
+											 cm1,cm2,cm3,f1cm1,f1cm2,f1cm3,f2cm1,f2cm2,f2cm3						
+					
+							feature1_branch -> 	cm1,cm2,cm3
+												cm1,cm2,cm3,f1cm1,f1cm2,f1cm3
+							
+							feature2_branch ->  cm1,cm2,cm3			
+												cm1,cm2,cm3,f2cm1,f2cm2,f2cm3				
+				
+					Integration_Branch2 -> 	cm1,cm2,cm3																# Team2
+											cm1,cm2,cm3,Developer1_Branch_Changes,Developer2_Branch_Changes 			
+				
+						Developer1_Branch -> cm1,cm2,cm3
+											 cm1,cm2,cm3,f1cm1,f1cm2,f1cm3,f2cm1,f2cm2,f2cm3						
+					
+							feature1_branch -> 	cm1,cm2,cm3
+												cm1,cm2,cm3,f1cm1,f1cm2,f1cm3
+							
+							feature2_branch ->  cm1,cm2,cm3			
+												cm1,cm2,cm3,f2cm1,f2cm2,f2cm3				
+					
+						Developer2_Branch -> cm1,cm2,cm3
+											 cm1,cm2,cm3,f1cm1,f1cm2,f1cm3,f2cm1,f2cm2,f2cm3						
+					
+							feature1_branch -> 	cm1,cm2,cm3
+												cm1,cm2,cm3,f1cm1,f1cm2,f1cm3
+							
+							feature2_branch ->  cm1,cm2,cm3			
+												cm1,cm2,cm3,f2cm1,f2cm2,f2cm3				
+				
+				
+			
+			
+			
+	Working with Branches :::
+	
+		Create Branch
+		
+		git branch 					# used to list the branches 
+		
+		git branch feature1 		# used to create a branch 
+		
+		git checkout -b feature1	# used to create a branch & switch to that new branch 
+		
+		git switch -c feature1		# used to create a branch & switch to that new branch 	
+
+		git merge <source_branch_name>		# used to merge the changes to the target branch 
+											# merge command should be execute from the target branch
+											
+											
+											
+		Repo1 :
+				master - cm1
+					
+					git switch -c feature1
+					
+					feature1 - 	cm1
+								cm1,f1cm1 
+								
+								git switch master 
+								
+								git merge feature1
+						
+		
+		Merge Conflict :
+			- When more than one user/feature try to update the same file at same record/line level, we get merge conflict.
+				
+		How to resolve Merge Conflict ???
+			
+			- Identify the file(s) causing the merge conflict.
+			- Open and Review the file contents.
+			- Decide which feature should be retained/deleted from that file.
+			- Remove all the header and footer tags and update/save the file content.
+			- perform git add and commit the changes in the target branch.
+			
+		Prevent the Merge Conflict using DevOps Strategies:
+		
+			Before Merge, do a proper review and merge it to target 
+			
+  501  cd d:
+  502  ls
+  503  cd Edu_DCP_Mar30/
+  504  clear
+  505  ls
+  506  mkdir demorepo1
+  507  cd demorepo1/
+  508  git init
+  509  ls -a
+  510  git status
+  511  vi .gitignore
+  512  clear
+  513  ls
+  514  la -
+  515  ls -a
+  516  cat .gitignore
+  517  git status
+  518  git add .
+  519  git commit -m "Initial commit"
+  520  git status
+  521  git log --oneline
+  522  cat .gitignore
+  523  echo "rec1" >> s1.txt
+  524  git status
+  525  echo "rec1" >> file1.txt
+  526  git status
+  527  git add .
+  528  git commit -m "Created s1.txt"
+  529  ls
+  530  git ls-files
+  531  cat .gitignore
+  532  ls
+  533  vi .gitignore
+  534  clear
+  535  cd ..
+  536  mkdir demorepo2/
+  537  cd demorepo2
+  538  git init
+  539  git status
+  540  chearl
+  541  clera
+  542  clear
+  543  echo "rec1" >> s1.txt
+  544  git add .
+  545  git commit -m "cm1"
+  546  echo "rec1" >> s2.txt
+  547  git add .
+  548  git commit -m "cm2"
+  549  echo "rec1" >> s3.txt
+  550  git add .
+  551  git commit -m "cm3"
+  552  echo "rec1" >> s4.txt
+  553  git add .
+  554  git commit -m "cm4"
+  555  echo "rec1" >> s5.txt
+  556  git add .
+  557  git commit -m "cm5"
+  558  clear
+  559  git log --oneline
+  560  ls
+  561  git ls-files
+  562  git status
+  563  git log --oneline
+  564  git reset --soft c69c11e
+  565  git status
+  566  ls
+  567  git ls-files
+  568  git log --oneline
+  569  git commit -m "cm5.1"
+  570  git status
+  571  ls
+  572  git ls-files
+  573  git log --oneline
+  574  git reset --mixed c69c11e
+  575  git status
+  576  git log --oneline
+  577  ls
+  578  git ls-files
+  579  git add .
+  580  git commit -m "CM5.2"
+  581  git status
+  582  ls
+  583  git ls-files
+  584  git log --oneline
+  585  git statsu
+  586  git status
+  587  git reset --hard c69c11e
+  588  git status
+  589  git ls-files
+  590  ls
+  591  git log --oneline
+  592  git reset --hard 312b585
+  593  git log --oneline
+  594  ls
+  595  git status
+  596  git log --oneline
+  597  git reset --hard 3327b63
+  598  git log --oneline
+  599  ls
+  600  ls
+  601  git log --oneline
+  602  ls
+  603  echo "rec1" >> f1.txt
+  604  git add .
+  605  git commit -m "cm2"
+  606  echo "rec1" >> f2.txt
+  607  git add .
+  608  git commit -m "cm3"
+  609  echo "rec1" >> f3.txt
+  610  git add .
+  611  git commit -m "cm4"
+  612  echo "rec1" >> f4.txt
+  613  git add .
+  614  git commit -m "cm5"
+  615  clear
+  616  git ls-files
+  617  git status
+  618  ls
+  619  git log --oneline
+  620  git log -2
+  621  git show 376a278
+  622  git log --oneline
+  623  git revert 376a278
+  624  git log --oneline
+  625  ls
+  626  git ls-files
+  627  git show 376a278
+  628  git show 500add2
+  629  git log --oneline
+  630  git revert 500add2
+  631  git log --oneline
+  632  ls
+  633  ls -a
+  634  git show 3327b63
+  635  git status
+  636  echo "rec1" >> w1.txt
+  637  git add .
+  638  echo "rec1" >> w2.txt
+  639  git add .
+  640  echo "rec1" >> w3.txt
+  641  git add .
+  642  echo "rec1" >> w4.txt
+  643  git add .
+  644  git status
+  645  git commit -m "created some files"
+  646  git log --oneline
+  647  git show 6d30856
+  648  ls
+  649  cd ..
+  650  mkdir demorepo3
+  651  cd demorepo3/
+  652  clear
+  653  git init
+  654  git status
+  655  clear
+  656  echo "rec1" >> s1.txt
+  657  git add .
+  658  git commit -m "cm1"
+  659  clear
+  660  ls
+  661  git log --oneline
+  662  git branch
+  663  git branch feature1
+  664  git branch
+  665  git checkout -b feature2
+  666  git branch
+  667  git switch master
+  668  git switch -c feature3
+  669  git switch master
+  670  clear
+  671  git log --oneline
+  672  ls
+  673  git switch feature1
+  674  git log --oneline
+  675  ls
+  676  echo "rec1" >> q1.txt
+  677  git status
+  678  git add .
+  679  git commit -m "f1cm1"
+  680  git log --oneline
+  681  ls
+  682  git switch master
+  683  git log --oneline
+  684  ls
+  685  git merge feature1
+  686  ls
+  687  git log --oneline
+  688  git status
+  689  cd ..
+  690  mkdir demorepo4
+  691  clear
+  692  cd demorepo4/
+  693  git init
+  694  echo "rec1" >> file1.txt
+  695  git add .
+  696  git commit -m "cm1"
+  697  git branch
+  698  git branch feature1
+  699  git branch feature2
+  700  git branch
+  701  git log --oneline
+  702  git switch feature1
+  703  ls
+  704  git log --oneline
+  705  ls
+  706  cat file1.txt
+  707  echo "record2 from feature1" >> file1.txt
+  708  cat file1.txt
+  709  git status
+  710  git add .
+  711  git commit -m "f1cm1"
+  712  git log -oneline
+  713  git log --oneline
+  714  git switch master
+  715  git log --oneline
+  716  git switch feature2
+  717  cat file1.txt
+  718  echo "record2 from feature2" >> file1.txt
+  719  cat file1.txt
+  720  git add .
+  721  git commit -m "f2cm1"
+  722  git log --oneline
+  723  git switch master
+  724  ls
+  725  cat file1.txt
+  726  git log --oneline
+  727  git merge feature1
+  728  cat file1.txt
+  729  git log --oneline
+  730  git merge feature2
+  731  clear
+  732  git status
+  733  cat file1.txt
+  734  vi file1.txt
+  735  git status
+  736  git add .
+  737  git commit -m "Resolved conflicts from features"
+  738  git status
+  739  ls
+  740  cat file1.txt
+  741  git log
+  742  ca file1.txt
+  743  cat file1.txt
+  744  history
+	
+Next :::
+	
+	Rebase, squash, 
+	
+	stash
+			
+	Handling Remote Repository(GITHUB)	
+
+	Jenkins 				
+				
+				
